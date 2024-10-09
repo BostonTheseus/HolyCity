@@ -3,9 +3,7 @@
 <ul>
     <% @poems.each do |poem| %>
         <li>
-            <a href="/poems/<%= poem.id%>">
-                <%= poem.title %>
-            </a>
+            <%= link_to poem.title, poem %>
         </li>
     <% end %>
 </ul>

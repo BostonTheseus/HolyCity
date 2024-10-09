@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   root "poems#index"
 
-  get "/poems", to: "poems#index"
-  get "/poems/:id", to: "poems#show"
+  resources :poems
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
