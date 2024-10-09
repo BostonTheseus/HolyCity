@@ -1,1 +1,9 @@
 <h1>The Holy City</h1>
+
+<ul>
+    <% @poems.each do |poem| %>
+        <li>
+            <%= poem.title %>
+        </li>
+    <% end %>
+</ul>
